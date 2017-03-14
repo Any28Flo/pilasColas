@@ -59,7 +59,7 @@ function Pila(){
 }
 
 
-var nombres =[]
+var nombres =[];
 //Instancia de una clase PILA 
 var nombre = new Pila();
 
@@ -76,4 +76,18 @@ nombre.push("Lore");
 
 nombre.imprimeDatos();
 
+//Insertamos en la pila apellido
 
+apellido.push("Flores");
+apellido.push("Olvera");
+apellido.push("Rojas");
+apellido.push("Velasco");
+
+
+//Vamos a realizarlo en todo el nuevo arreglo
+for ( var i = 0 ; i<  5 ; i++){
+
+	nombres.push( nombre.pop() + " "+ apellido.pop());
+}
+
+console.log(nombres);
